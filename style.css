@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+root {
+  font-size: 10px;
+  --not-black: rgb(15, 15, 15);
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(15, 15, 15);
+}
+
+#wrap-all {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#image-container {
+  width: 100%;
+  height: 100%;
+}
+
+#background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+@media (max-aspect-ratio: 3/2) {
+  #background-image {
+    object-fit: cover;
+  }
+}
+@media (max-aspect-ratio: 3/5) {
+  #background-image {
+    object-position: 47% 0rem;
+    object-fit: cover;
+  }
+}
+@media (min-aspect-ratio: 5/2) {
+  #background-image {
+    object-fit: contain;
+  }
+}
+
+#animation-container {
+  width: 100%;
+  transform: rotate(-2deg);
+  position: absolute;
+  bottom: 2%;
+}
+
+#text-container {
+  /* position: absolute; */
+  /* bottom: 5%; */
+  width: 100%;
+  font-family: "Knewave", cursive;
+  color: oldlace;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0.05rem rgb(167, 51, 31);
+  background-image: linear-gradient(-33deg, #fb5120, #dc340a);
+  opacity: 0.8;
+  padding-bottom: 0.25rem;
+  transform: rotate(-2deg) scale(1.1);
+  box-shadow: 0.5rem 0.5rem 0.25rem rgb(15, 15, 15);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  #animation-container {
+    bottom: 5%;
+  }
+  #text-container {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  #animation-container {
+    bottom: 8%;
+  }
+  #text-container {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 300px) {
+  #animation-container {
+    bottom: 10%;
+  }
+  #text-container {
+    font-size: 1rem;
+    bottom: 20%;
+  }
+}
+
+#countdown {
+  font-size: 0.75em;
+  color: rgb(15, 15, 15);
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  display: inline-block;
+  width: 1.1em;
+  font-size: 1.1em;
+  vertical-align: -5%;
+  color: oldlace;
+}
+#rocket {
+  font-size: 0.8em;
+}
