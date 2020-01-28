@@ -122,5 +122,8 @@ body {
   color: oldlace;
 }
 #rocket {
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
+  fill: oldlace;
+  width: 1em;
+  height: 1em;
 }
