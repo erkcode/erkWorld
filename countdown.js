@@ -1,4 +1,4 @@
-const launchDate = new Date("Feb 14, 2020 06:00:00").getTime();
+const launchDate = new Date('Mar 1, 2020 06:00:00').getTime();
 
 const second = 1000;
 const minute = second * 60;
@@ -12,10 +12,10 @@ function countdown() {
   const hours = Math.floor((delta % day) / hour);
   const minutes = Math.floor((delta % hour) / minute);
   const seconds = Math.floor((delta % minute) / second);
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
+  document.getElementById('days').innerText = days;
+  document.getElementById('hours').innerText = hours;
+  document.getElementById('minutes').innerText = minutes;
+  document.getElementById('seconds').innerText = seconds;
 }
 
 setInterval(countdown, 1000);
