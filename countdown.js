@@ -1,9 +1,14 @@
-const launchDate = new Date('Mar 21, 2020 06:00:00').getTime()
-
 const second = 1000
 const minute = second * 60
 const hour = minute * 60
 const day = hour * 24
+
+const now = new Date()
+const thisMorning = now
+thisMorning.setHours(7)
+thisMorning.setMinutes(0)
+thisMorning.setSeconds(0)
+const launchDate = thisMorning.getTime() + 18 * day
 
 function countdown() {
   const now = new Date().getTime()
